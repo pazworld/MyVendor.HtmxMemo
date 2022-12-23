@@ -14,7 +14,7 @@ class Index extends ResourceObject
     public function onGet(): static
     {
         $memos = $this->resource->get('app://self/memos');
-        $this['memos'] = $memos;
+        $this->body['memos'] = $memos;
 
         return $this;
     }
