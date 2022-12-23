@@ -5,18 +5,16 @@ declare(strict_types=1);
 namespace MyVendor\HtmxMemo\Resource\Page;
 
 use BEAR\Resource\ResourceObject;
+use BEAR\Sunday\Inject\ResourceInject;
 
 class Index extends ResourceObject
 {
-    /** @var array{greeting: string} */
-    public $body;
-
-    /** @return static */
-    public function onGet(string $name = 'BEAR.Sunday'): static
+    use ResourceInject;
+    
+    public function onGet(): static
     {
-        $this->body = [
-            'greeting' => 'Hello ' . $name,
-        ];
+        $memos = $this->resource->get('app://self/memos');
+        $this['memos'] = $memos;
 
         return $this;
     }
