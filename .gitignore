@@ -24,3 +24,5 @@ autoload.php
 /docker
 /.devcontainer
 /var/db
+/var/qiq/stub
+/var/qiq/helper
