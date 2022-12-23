@@ -20,9 +20,8 @@ class AppModule extends AbstractAppModule
         $this->install(
             new AuraSqlModule(
                 'sqlite:' . $dbpath
-                )
-            );
+            )
+        );
             $this->install(new PackageModule());
-        }
     }
-    
+}
