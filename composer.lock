@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10e80ee1c6909150cedf30ed86a0c752",
+    "content-hash": "4ff1437a783fc3a6e92be825142c00cf",
     "packages": [
         {
             "name": "aura/cli",
@@ -377,6 +377,54 @@
                 "source": "https://github.com/bearsunday/BEAR.Package/tree/1.15.0"
             },
             "time": "2022-11-22T01:31:01+00:00"
+        },
+        {
+            "name": "bear/qiq-module",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bearsunday/BEAR.QiqModule.git",
+                "reference": "b139b460284db1f6c870b5a9b6765b8279609983"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.QiqModule/zipball/b139b460284db1f6c870b5a9b6765b8279609983",
+                "reference": "b139b460284db1f6c870b5a9b6765b8279609983",
+                "shasum": ""
+            },
+            "require": {
+                "bear/resource": "^1.16",
+                "bear/sunday": "^1.6",
+                "php": "^8.0",
+                "qiq/qiq": "^1.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4",
+                "phpunit/phpunit": "^9.5",
+                "ray/rector-ray": "^1.0",
+                "rector/rector": "^0.14.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BEAR\\QiqModule\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Akihito Koriyama",
+                    "email": "akihito.koriyama@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/bearsunday/BEAR.QiqModule/issues",
+                "source": "https://github.com/bearsunday/BEAR.QiqModule/tree/1.0.2"
+            },
+            "time": "2022-12-15T06:47:19+00:00"
         },
         {
             "name": "bear/query-repository",
@@ -1495,6 +1543,68 @@
             "time": "2022-06-28T09:31:37+00:00"
         },
         {
+            "name": "laminas/laminas-escaper",
+            "version": "2.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-escaper.git",
+                "reference": "ee7a4c37bf3d0e8c03635d5bddb5bb3184ead490"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/ee7a4c37bf3d0e8c03635d5bddb5bb3184ead490",
+                "reference": "ee7a4c37bf3d0e8c03635d5bddb5bb3184ead490",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-mbstring": "*",
+                "php": "^7.4 || ~8.0.0 || ~8.1.0 || ~8.2.0"
+            },
+            "conflict": {
+                "zendframework/zend-escaper": "*"
+            },
+            "require-dev": {
+                "infection/infection": "^0.26.6",
+                "laminas/laminas-coding-standard": "~2.4.0",
+                "maglnet/composer-require-checker": "^3.8.0",
+                "phpunit/phpunit": "^9.5.18",
+                "psalm/plugin-phpunit": "^0.17.0",
+                "vimeo/psalm": "^4.22.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Escaper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Securely and safely escape HTML, HTML attributes, JavaScript, CSS, and URLs",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "escaper",
+                "laminas"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-escaper/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-escaper/issues",
+                "rss": "https://github.com/laminas/laminas-escaper/releases.atom",
+                "source": "https://github.com/laminas/laminas-escaper"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2022-10-10T10:11:09+00:00"
+        },
+        {
             "name": "mobiledetect/mobiledetectlib",
             "version": "2.8.41",
             "source": {
@@ -2359,6 +2469,63 @@
                 "source": "https://github.com/php-fig/simple-cache/tree/master"
             },
             "time": "2017-10-23T01:57:42+00:00"
+        },
+        {
+            "name": "qiq/qiq",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qiqphp/qiq.git",
+                "reference": "518c6c64119f5aa5897219578a54fede0d9121ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qiqphp/qiq/zipball/518c6c64119f5aa5897219578a54fede0d9121ce",
+                "reference": "518c6c64119f5aa5897219578a54fede0d9121ce",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-escaper": "^2.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Qiq\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Qiq Contributors",
+                    "homepage": "https://github.com/qiqphp/qiq/contributors"
+                }
+            ],
+            "description": "Provides TemplateView and TwoStepView implementations using PHP itself as the templating language, and an optional lightweight template markup.",
+            "homepage": "https://github.com/qiqphp/qiq",
+            "keywords": [
+                "Escape",
+                "escaper",
+                "escaping",
+                "template",
+                "template view",
+                "two step view",
+                "two-step view",
+                "twostep view",
+                "view"
+            ],
+            "support": {
+                "issues": "https://github.com/qiqphp/qiq/issues",
+                "source": "https://github.com/qiqphp/qiq/tree/1.0.2"
+            },
+            "time": "2021-11-07T00:01:58+00:00"
         },
         {
             "name": "ray/aop",
