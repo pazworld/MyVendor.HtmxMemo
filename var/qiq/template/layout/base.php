@@ -17,6 +17,7 @@
                 white-space: nowrap;
             }
         </style>
+        <script src="https://unpkg.com/htmx.org@1.8.4"></script>
     </head>
     <body>
         {{= getContent() }}
