@@ -11,10 +11,10 @@
             {{ foreach ($this->memos as $memo): }}
             {{ $id = (string) $memo['id'] }}
             {{ $title = $memo['title'] }}
-            <tr>
+            <tr hx-target="this" hx-swap="outerHTML">
                 <td>{{h $title }}</td>
                 <td class="td-button">
-                    <button class="button is-warning">編集</button>
+                    <button hx-get="/edit-memo?id={{h $id }}" class="button is-warning">編集</button>
                     <button class="button is-danger">削除</button>
                 </td>
             </tr>
