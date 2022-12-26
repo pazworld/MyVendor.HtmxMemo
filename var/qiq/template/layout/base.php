@@ -18,7 +18,7 @@
             }
             tr.htmx-swapping td {
                 opacity: 0;
-                transition: opacity 1s ease-out;
+                transition: opacity 0.5s ease-out;
             }
         </style>
         <script src="https://unpkg.com/htmx.org@1.8.4"></script>
