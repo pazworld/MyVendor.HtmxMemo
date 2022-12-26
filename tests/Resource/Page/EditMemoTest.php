@@ -21,7 +21,7 @@ class EditMemoTest extends TestCase
         $this->pdo = $injector->getInstance(ExtendedPdoInterface::class);
         $this->pdo->perform('DROP TABLE IF EXISTS memos');
         $this->pdo->perform('CREATE TABLE memos (id INTEGER PRIMARY KEY, title TEXT)');
-        $this->pdo->perform('INSERT INTO memos (title) VALUES ("ねずみ")');
+        $this->pdo->perform('INSERT INTO memos (id, title) VALUES (1, "ねずみ")');
     }
 
     public function testOnPut(): void
