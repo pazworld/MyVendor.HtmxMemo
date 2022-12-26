@@ -26,7 +26,6 @@ class AddMemoTest extends TestCase
     public function testOnPost(): void
     {
         $ro = $this->resource->post('page://self/add-memo', ['title' => 'ふぐ']);
-        echo (string) $ro;
         $this->assertMatchesRegularExpression('/ふぐ/', (string) $ro);
     }
 }
