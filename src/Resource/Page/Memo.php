@@ -18,4 +18,12 @@ class Memo extends ResourceObject
 
         return $this;
     }
+
+    public function onDelete(int $id): static
+    {
+        $this->resource->delete('app://self/memo', ['id' => $id]);
+        $this->code = 204;
+
+        return $this;
+    }
 }

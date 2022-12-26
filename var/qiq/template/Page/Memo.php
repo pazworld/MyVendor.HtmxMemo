@@ -1,3 +1,4 @@
+{{ if (isset($this->memo)): }}
 {{ $id = (string) $this->memo['id'] }}
 {{ $title = $this->memo['title'] }}
 <tr hx-target="this" hx-swap="outerHTML">
@@ -7,3 +8,4 @@
         <button class="button is-danger">削除</button>
     </td>
 </tr>
+{{ endif }}

@@ -32,7 +32,7 @@ class Memo extends ResourceObject
 
     public function onDelete(int $id): static
     {
-        $sql = 'DELETE memos WHERE id=:id';
+        $sql = 'DELETE FROM memos WHERE id=:id';
         $bind = ['id' => $id];
         $this->pdo->perform($sql, $bind);
 
