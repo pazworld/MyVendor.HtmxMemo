@@ -22,12 +22,12 @@
                     </td>
                 </tr>
             {{ endforeach }}
-            <tr>
+            <tr hx-target="this" hx-swap="outerHTML">
                 <td>
-                    <input class="input" type="text"/>
+                    <input class="input" name="title" type="text"/>
                 </td>
                 <td class="td-button">
-                    <button class="button is-primary">追加</button>
+                    <button hx-post="/add-memo" hx-include="closest tr" class="button is-primary">追加</button>
                 </td>
             </tr>
         </table>
