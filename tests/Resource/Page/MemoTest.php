@@ -27,6 +27,6 @@ class MemoTest extends TestCase
     public function testOnDelete(): void
     {
         $ro = $this->resource->delete('page://self/memo', ['id' => 1]);
-        $this->assertSame(204, $ro->code);
+        $this->assertSame('', (string) $ro);
     }
 }

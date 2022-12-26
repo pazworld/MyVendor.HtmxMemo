@@ -22,7 +22,6 @@ class Memo extends ResourceObject
     public function onDelete(int $id): static
     {
         $this->resource->delete('app://self/memo', ['id' => $id]);
-        $this->code = 204;
         $this->body['memo'] = null;
 
         return $this;
