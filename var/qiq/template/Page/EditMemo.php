@@ -1,3 +1,4 @@
+{{ if (isset($this->memo)): }}
 {{ $id = (string) $this->memo['id'] }}
 {{ $title = $this->memo['title'] }}
 <tr hx-target="this" hx-swap="outerHTML">
@@ -10,3 +11,4 @@
         <button hx-get="/memo?id={{h $id }}" class="button">キャンセル</button>
     </td>
 </tr>
+{{ endif }}

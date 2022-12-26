@@ -22,10 +22,9 @@ class EditMemo extends ResourceObject
     public function onPut(int $id, string $title): static
     {
         $this->resource->put('app://self/memo', ['id' => $id, 'title' => $title]);
-        $memo = $this->resource->get('app://self/memo', ['id' => $id]);
-        $this->body['memo'] = $memo;
         $this->code = 303;
         $this->headers['location'] = "/memo?id=$id";
+        $this->body['memo'] = null;
 
         return $this;
     }
