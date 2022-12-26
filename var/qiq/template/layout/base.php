@@ -16,6 +16,10 @@
                 width: 0;
                 white-space: nowrap;
             }
+            tr.htmx-swapping td {
+                opacity: 0;
+                transition: opacity 1s ease-out;
+            }
         </style>
         <script src="https://unpkg.com/htmx.org@1.8.4"></script>
     </head>
