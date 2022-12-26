@@ -9,18 +9,18 @@
                 <th></th>
             </tr>
             {{ foreach ($this->memos as $memo): }}
-            {{ $id = (string) $memo['id'] }}
-            {{ $title = $memo['title'] }}
-            <tr hx-target="this" hx-swap="outerHTML">
-                <td>
-                    <input type="hidden" name="id" value="{{h $id }}"/>
-                    {{h $title }}
-                </td>
-                <td class="td-button">
-                    <button hx-get="/edit-memo?id={{h $id }}" class="button is-warning">編集</button>
-                    <button hx-delete="/memo" hx-include="closest tr" class="button is-danger">削除</button>
-                </td>
-            </tr>
+                {{ $id = (string) $memo['id'] }}
+                {{ $title = $memo['title'] }}
+                <tr hx-target="this" hx-swap="outerHTML">
+                    <td>
+                        <input type="hidden" name="id" value="{{h $id }}"/>
+                        {{h $title }}
+                    </td>
+                    <td class="td-button">
+                        <button hx-get="/edit-memo?id={{h $id }}" class="button is-warning">編集</button>
+                        <button hx-delete="/memo" hx-include="closest tr" class="button is-danger">削除</button>
+                    </td>
+                </tr>
             {{ endforeach }}
             <tr>
                 <td>
