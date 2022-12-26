@@ -10,7 +10,7 @@ use BEAR\Sunday\Inject\ResourceInject;
 class AddMemo extends ResourceObject
 {
     use ResourceInject;
-    
+
     public function onPost(string $title): static
     {
         $ro = $this->resource->post('app://self/memos', ['title' => $title]);

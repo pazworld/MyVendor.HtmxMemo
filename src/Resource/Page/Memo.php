@@ -10,7 +10,7 @@ use BEAR\Sunday\Inject\ResourceInject;
 class Memo extends ResourceObject
 {
     use ResourceInject;
-    
+
     public function onGet(int $id): static
     {
         $memo = $this->resource->get('app://self/memo', ['id' => $id]);

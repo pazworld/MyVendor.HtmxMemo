@@ -10,7 +10,7 @@ use BEAR\Sunday\Inject\ResourceInject;
 class Index extends ResourceObject
 {
     use ResourceInject;
-    
+
     public function onGet(): static
     {
         $memos = $this->resource->get('app://self/memos');
