@@ -22,6 +22,6 @@ class AppModule extends AbstractAppModule
                 'sqlite:' . $dbpath
             )
         );
-            $this->install(new PackageModule());
+        $this->install(new PackageModule());
     }
 }
